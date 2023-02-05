@@ -1,8 +1,11 @@
-function App() {
+import Header from "./components/Header/Header";
+
+const App = () => {
   return (
     <div className="container">
-      <h1>Hello From React</h1>
+      <Header title="TRAINING TRACKER" button="Add" />
     </div>
   );
-}
+};
+
 export default App;
