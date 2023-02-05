@@ -6,59 +6,24 @@
   padding: 0;
 }
 
-body {
-  font-family: "Fira Sans";
-}
-
 .container {
   max-width: 1200px;
   margin: 30px auto;
   overflow: auto;
-  min-height: 300px;
-  border: 1px solid steelblue;
+  min-height: 1000px;
+  border: 5px solid rgb(108, 14, 14);
   padding: 30px;
   border-radius: 5px;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.btn {
-  display: inline-block;
-  background: #000;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 15px;
-  font-family: inherit;
-}
-
-.btn:focus {
-  outline: none;
-}
-
-.btn:active {
-  transform: scale(0.98);
-}
-
-.btn-block {
-  display: block;
-  width: 100%;
-}
-
-.session {
-  background: #f4f4f4;
-  margin: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
+.desc {
+  display: grid;
+  place-content: center;
+  min-height: 5vh;
+  font-family: "Oswald", sans-serif;
+  text-align: justify;
+  letter-spacing: 1px;
+  font: bolder;
 }
 
 .task.reminder {

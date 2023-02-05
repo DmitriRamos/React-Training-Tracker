@@ -1,9 +1,13 @@
-const Header = ({ title, button }) => {
+import "./Header.css";
+
+const Header = ({ title }) => {
   return (
-    <header className="header">
-      <h1>{title}</h1>
-      <button className="btn">{button}</button>
-    </header>
+    <section class="wrapper">
+      <div class="top">{title}</div>
+      <div class="bottom" aria-hidden="true">
+        {title}
+      </div>
+    </section>
   );
 };
 
