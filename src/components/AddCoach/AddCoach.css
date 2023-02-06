@@ -1,0 +1,62 @@
+.cname {
+  font-size: 16px;
+  font-weight: 900;
+  position: relative;
+  top: -30px;
+}
+
+.promptbox {
+  width: 85px;
+  border-color: black;
+  padding-left: 5px;
+  border-radius: 5px;
+  margin: 15px;
+  top: -30px;
+  position: relative;
+}
+
+.promptbox:visited {
+  border-color: black;
+  top: -30px;
+}
+
+.button {
+  background-color: white;
+  border: 5px;
+  color: black;
+  top: -30px;
+  text-align: center;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  font-weight: 900;
+  position: relative;
+}
+
+.button:hover {
+  color: black;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+
+.button span:after {
+  content: "+";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 10px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

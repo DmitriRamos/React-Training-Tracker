@@ -1,5 +1,6 @@
 import Header from "./components/Header/Header";
 import Week from "./components/Week/Week";
+import AddCoach from "./components/AddCoach/AddCoach";
 
 const App = () => {
   const desc =
@@ -9,6 +10,7 @@ const App = () => {
     <div className="container">
       <Header title="TRAINING TRACKER ⏰" />
       <p className="desc">{desc}</p>
+      <AddCoach />
       <Week />
     </div>
   );

@@ -13,7 +13,9 @@
   min-height: 1000px;
   border: 5px solid rgb(108, 14, 14);
   padding: 30px;
-  border-radius: 5px;
+  border-radius: 10px;
+  border-style: groove;
+  border-width: 20px;
 }
 
 .desc {
