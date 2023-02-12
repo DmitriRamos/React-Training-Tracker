@@ -1,6 +1,6 @@
 import Coach from "../Coach/Coach";
 
-const CoachList = ({ coaches, onDelete, id }) => {
+const CoachList = ({ coaches, onDelete }) => {
   return (
     <div>
       {coaches.map((name) => (

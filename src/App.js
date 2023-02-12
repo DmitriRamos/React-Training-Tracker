@@ -1,11 +1,14 @@
 import Header from "./components/Header/Header";
 import AddCoach from "./components/AddCoach/AddCoach";
 import { useState } from "react";
+import AddSeshForm from "./components/AddSeshForm/AddSeshForm";
 
 const App = () => {
   const id = Math.floor(Math.random() * 10000) + 1;
-  const [coach, setCoach] = useState([""]);
+  const [coach, setCoach] = useState("");
   const [coaches, setCoaches] = useState([]);
+  const [sessions, setSessions] = useState([]);
+
   const desc =
     "Welcome to the premier training tracker, this is a free tool for you to keep tabs on your weekly sessions with different coaches!";
 
@@ -20,6 +23,10 @@ const App = () => {
     setCoaches(coaches.filter((coachName) => coachName !== name));
   };
 
+  const deleteSesh = (name) => {
+    setSessions(sessions.filter((sessionName) => sessionName !== name));
+  };
+
   const onSubmit = (e) => {
     e.preventDefault();
 
@@ -28,7 +35,7 @@ const App = () => {
       return;
     }
 
-    addCoach(coach, id);
+    addCoach(coach);
     setCoach([""]);
   };
 
@@ -45,6 +52,13 @@ const App = () => {
         id={id}
         onDelete={deleteCoach}
       />
+      <AddSeshForm
+        sessions={sessions}
+        coaches={coaches}
+        addSesh={setSessions}
+        setSessions={setSessions}
+        deleteSesh={deleteSesh}
+      ></AddSeshForm>
     </div>
   );
 };
