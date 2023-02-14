@@ -42,7 +42,9 @@ const App = () => {
   return (
     <div className="container">
       <Header title="TRAINING TRACKER ⏰" />
-      <p className="desc">{desc}</p>
+      <p className="desc" style={{ fontSize: "25px", margin: "30px" }}>
+        {desc}
+      </p>
       <AddCoach
         coach={coach}
         coaches={coaches}
